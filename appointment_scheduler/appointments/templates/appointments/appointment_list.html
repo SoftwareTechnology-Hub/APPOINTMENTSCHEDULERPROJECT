@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- appointments/templates/appointments/appointment_list.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Appointment List</h2>
+  <ul>
+    {% for appointment in appointments %}
+      <li>{{ appointment.user.username }} - {{ appointment.date_time }} - {% if appointment.is_approved %}Approved{% else %}Pending{% endif %}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+
+</body>
+</html>
