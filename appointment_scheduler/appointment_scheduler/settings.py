@@ -78,9 +78,9 @@ WSGI_APPLICATION = "appointment_scheduler.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'appk',
-        'USER': 'root',
-        'PASSWORD': 'Asqlmy10(*&)',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
